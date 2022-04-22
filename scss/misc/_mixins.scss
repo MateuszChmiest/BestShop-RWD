@@ -1,0 +1,27 @@
+@mixin tablet {
+  @media (min-width: 793px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1350px) {
+    @content;
+  }
+}
+
+@mixin line ($color)  {
+&::before {
+  content: "";
+  width: 100px;
+  height: 10px;
+  background: $color;
+  position: absolute;
+  }
+}

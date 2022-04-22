@@ -1,0 +1,148 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.9375rem;
+
+  @include laptop {
+    flex-direction: unset;
+    padding: 6.25rem 6.25rem 6.25rem;
+    max-width: 1352px;
+    margin: 0 auto;
+  }
+
+  &__column {
+    @include laptop {
+      width: 50%;
+    }
+    h2 {
+      margin-top: 1.25rem;
+      margin-bottom: 0.625rem;
+      font-size: 2.5rem;
+
+      @include laptop {
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        font-size: 3.0625rem;
+      }
+    }
+    p {
+      @include laptop {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &__icon {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+
+    @include laptop {
+      flex-direction: unset;
+    }
+
+    a {
+      margin-bottom: 0.625rem;
+      color: $color-grey;
+
+      @include laptop {
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+
+    &__field {
+      display: flex;
+      flex-direction: column;
+
+      &:first-of-type {
+        margin-bottom: 2.5rem;
+      }
+    }
+
+    .btn {
+      align-self: flex-end;
+      font-size: 0.8125rem;
+      margin-top: 1.25rem;
+      width: 14.125rem;
+      height: 3.5625rem;
+      margin-bottom: 2.75rem;
+
+      @include laptop {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__label {
+    font-family: $font-family;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.6875rem;
+    color: $color-primary;
+    line-height: 0.9rem;
+    letter-spacing: 3.28px;
+    margin-top: 2rem;
+
+    @include laptop {
+      margin-top: 0;
+    }
+  }
+
+  &__input {
+    border: none;
+    border-bottom: 1px solid $color-grey;
+    background-color: transparent;
+    line-height: 2.6rem;
+  }
+
+  &__consent {
+    margin-top: 1.875rem;
+
+  }
+
+  &__checkbox {
+    display: block;
+    position: relative;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+    padding-left: 2.1875rem;
+
+    input {
+      position: absolute;
+      left: 0.625rem;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+
+      &:checked ~ .checkbox {
+        background-image: url("../assets/Checkmark.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 50%;
+      }
+    }
+
+    .checkbox {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: white;
+      border: 1px solid $color-grey;
+      height: 24px;
+      width: 24px;
+      border-radius: 4px;
+    }
+
+    p {
+      font-size: 0.75rem;
+      color: $color-grey;
+      line-height: 1rem;
+    }
+  }
+}

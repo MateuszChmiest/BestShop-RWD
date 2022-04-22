@@ -1,0 +1,56 @@
+@use "sass:math";
+.container {
+  max-width: $containerWidth;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    min-height: 50px;
+    width: calc((100% / $columns) * $i - $gutter);
+    padding: 0 calc($gutter / 2);
+  }
+}
+
+@for $i from 1 through $columns {
+  .col-md-#{$i} {
+    width: 100%;
+
+    @media (min-width: 768px) {
+      min-height: 50px;
+      width: calc((100% / $columns) * $i - $gutter);
+      padding: 0 calc($gutter / 2);
+    }
+  }
+}
+
+@for $i from 1 through $columns {
+  .col-lg-#{$i} {
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+
+    @media (min-width: 992px) {
+      min-height: 50px;
+      width: calc((100% / $columns) * $i - $gutter);
+      padding: 0 calc($gutter / 2);
+    }
+  }
+}
+
+@for $i from 1 through $columns {
+  .col-xl-#{$i} {
+    @media (min-width: 1280px) {
+      min-height: 50px;
+      width: calc((100% / $columns) * $i - $gutter);
+      padding: 0 calc($gutter / 2);
+    }
+  }
+}

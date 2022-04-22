@@ -1,0 +1,206 @@
+.benefits {
+  background: $color-light-grey;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet {
+      padding: 0 6.25rem;
+    }
+  }
+
+  &__single {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: $color-white;
+    padding: 0 1.25rem;
+    text-align: left;
+    margin-top: 2.625rem;
+    border: 1px solid #E8E9ED;
+    border-radius: 0.3125rem;
+
+    @include laptop {
+      max-width: 1152px;
+      flex-direction: unset;
+      justify-content: space-between;
+    }
+
+    &--macbook {
+      --accent-color: #{$color-redish};
+
+      @include laptop {
+        flex-direction: row-reverse;
+        margin-top: 6.5625rem;
+      }
+      .benefits__image {
+        position: relative;
+        z-index: 2;
+        max-width: 12rem;
+
+        @include laptop {
+          max-width: 20rem;
+        }
+        &::before {
+          content: "";
+          max-width: 100%;
+          width: 5.9375rem;
+          height: 5.9375rem;
+          background-color: $color-redish;
+          display: block;
+          border-radius: 45%;
+          position: absolute;
+          transform: rotate(45deg);
+          z-index: -1;
+          right: 0.8rem;
+
+          @media (min-width: 300px) {
+            width: 7.9375rem;
+            height: 7.9375rem;
+            right: 1rem;
+
+            @include laptop {
+              width: 11rem;
+              height: 11rem;
+              border-radius: 30%;
+            }
+          }
+        }
+      }
+    }
+    &--iphone {
+      --accent-color: #{$color-primary};
+
+      .benefits__image {
+        position: relative;
+        z-index: 2;
+        max-width: 11.75rem;
+
+        @include laptop {
+          max-width: 20rem;
+        }
+        &::before {
+          content: "";
+          max-width: 100%;
+          width: 5.9375rem;
+          height: 5.9375rem;
+          background-color: $color-primary;
+          display: block;
+          border-radius: 50%;
+          position: absolute;
+          transform: rotate(45deg);
+          z-index: -1;
+          left: 2rem;
+          top: 4rem;
+
+          @media (min-width: 280px) {
+            width: 7.9375rem;
+            height: 7.9375rem;
+            right: 1rem;
+
+            @include laptop {
+              width: 15rem;
+              height: 15rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__image {
+    padding: 2rem;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      background-position: center;
+      background-size: cover;
+      margin-top: 2.31rem;
+      margin-bottom: 1.6875rem;
+    }
+
+  }
+
+  &__text {
+    padding: 1.25rem 1.25rem;
+    text-align: left;
+    margin-top: 0;
+    display: block;
+
+
+    @include laptop {
+      display: block;
+      text-align: left;
+
+      &::after {
+        content: "";
+        width: 332px;
+        height: 4px;
+        background: var(--accent-color);
+        position: absolute;
+        margin-top: 50px;
+      }
+    }
+    p {
+      margin-top: 0.625rem;
+
+      @include laptop {
+        max-width: 332px;
+      }
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__double {
+    margin-top: 2rem;
+    padding: 0;
+    --accent-color: #{$color-green};
+
+    @include laptop {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1152px;
+      width: 100%;
+      margin-bottom: 6.5625rem;
+    }
+
+    h2 {
+      margin-left: 1.25rem;
+    }
+
+    p {
+      margin-left: 1.25rem;
+      margin-right: 1.25rem;
+    }
+  }
+
+  &__trumpet {
+    background: $color-green;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    border-radius: 0.3125rem;
+    margin-bottom: 3.125rem;
+
+    @include laptop {
+      margin-left: 60px;
+      flex-grow: 1;
+      margin-bottom: 0;
+    }
+
+    img {
+      margin-top: 3rem;
+
+    }
+  }
+}

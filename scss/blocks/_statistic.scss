@@ -1,0 +1,82 @@
+.statistic {
+
+  &__info {
+    margin-top: 3.125rem;
+    text-align: center;
+    margin-bottom: 3.125rem;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @include tablet {
+      flex-direction: unset;
+      justify-content: space-around;
+    }
+
+    .column {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 2rem;
+
+      &__tittle {
+        font-size: 1.25rem;
+        font-family: $font-secondary;
+        font-weight: bold;
+        letter-spacing: 0.375rem;
+        margin-top: 0.875rem;
+        margin-bottom: 1.1875rem;
+      }
+
+      &__text {
+        font-size: 1.0625rem;
+        font-family: $font-secondary;
+        font-weight: normal;
+        color: $color-grey;
+      }
+
+      &__red {
+        width: 3.9375rem;
+        height: 3.9375rem;
+        background-color: $color-redish;
+        border-radius: 50%;
+        position: relative;
+      }
+
+      &__blue {
+        width: 3.9375rem;
+        height: 3.9375rem;
+        background-color: $color-primary;
+        border-radius: 50%;
+        position: relative;
+      }
+
+      &__green {
+        width: 3.9375rem;
+        height: 3.9375rem;
+        background-color: $color-green;
+        border-radius: 50%;
+        position: relative;
+      }
+
+      &__eye {
+        position: absolute;
+        top: 0.9375rem;
+        right: -1.75rem;
+      }
+
+      &__person {
+        position: absolute;
+        top: 0.4375rem;
+        right: -1rem;
+      }
+
+      &__catalog {
+        position: absolute;
+        top: 0.4375rem;
+        right: -1.5rem;
+      }
+    }
+  }
+}

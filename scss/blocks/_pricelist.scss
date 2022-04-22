@@ -1,0 +1,107 @@
+.pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  &__tittle {
+    margin-top: 3.3125rem;
+    margin-bottom: 1rem;
+  }
+  &__boxes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+
+    @include desktop {
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: flex-end;
+    }
+  }
+
+  &__box {
+    border: 1px solid var(--accent-color);
+    max-width: 19.3125rem;
+    width: 100%;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 3.125rem;
+    padding: 25px 10px 0;
+
+    @include desktop {
+      flex-direction: column;
+      margin-bottom: 6.25rem;
+    }
+
+    &__basic {
+      --accent-color: #{$color-redish};
+    }
+
+    &__professional {
+      max-width: 22.1875rem;
+      width: 100%;
+      --accent-color: #{$color-primary};
+      box-shadow: 1px 1px 12px $color-primary;
+      margin-top: 3.375rem;
+    }
+
+    &__premium {
+      --accent-color: #{$color-green};
+      margin-top: 3.375rem;
+    }
+  }
+  &__offer {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  &__type {
+    font-family: $font-secondary;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  &__price {
+    color: var(--accent-color);
+    font-size: 2.875rem;
+    font-family: $font-family;
+    font-weight: lighter;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+  }
+
+  &__limited {
+    font-size: 0.75rem;
+    font-family: $font-secondary;
+    font-weight: bold;
+  }
+
+  &__detail {
+    font-size: 1rem;
+    font-family: $font-family;
+    font-weight: normal;
+    margin-top: 1.5rem;
+
+    &::before {
+      content: "";
+      background-image: url("../assets/Checkmark-1.svg");
+      display: inline-block;
+      width: 0.6875rem;
+      height: 0.6875rem;
+      margin-right: 0.625rem;
+    }
+    &__not {
+      &::before {
+        content: "";
+        background-image: url("../assets/Close.svg");
+      }
+    }
+  }
+}

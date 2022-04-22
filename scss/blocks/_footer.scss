@@ -1,0 +1,34 @@
+.footer {
+  box-shadow: 0 -5px 40px #00000029;
+  padding: 1.25rem;
+  background-color: $color-light-grey;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    a {
+      color: $color-primary;
+      font-size: 1.625rem;
+      font-weight: 300;
+      transition: opacity .3s;
+    }
+
+    p {
+      font-size: 0.6875rem;
+      color: $color-grey;
+      margin-top: 0.4375rem;
+    }
+  }
+
+  &__icons {
+    cursor: pointer;
+
+    a:first-of-type {
+      margin-right: 1.25rem;
+    }
+  }
+}

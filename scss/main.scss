@@ -1,0 +1,25 @@
+/** Import generic */
+@import "generic/reset";
+@import "misc/variables";
+
+/** Import misc */
+
+@import "misc/mixins";
+
+/** Import blocks  */
+@import "scss/blocks/header";
+@import "scss/blocks/banner";
+@import "scss/blocks/statistic";
+@import "scss/blocks/benefits";
+@import "scss/blocks/calculator";
+@import "scss/blocks/pricelist";
+@import "scss/blocks/contact";
+@import "scss/blocks/footer";
+
+/** Import elements */
+@import "elements/buttons";
+
+/** Import general */
+@import "general/typography";
+
+
