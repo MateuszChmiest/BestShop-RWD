@@ -1,8 +1,10 @@
 <h1>BestShop - Project</h1>
 BestShop is a landing page made during the Coders Lab course.<br/>
 Project based on visualization from <a href="https://xd.adobe.com/view/31804ad0-5f57-46e0-6edf-a5f54c37078a-47b1/grid/">AdobeXD</a>
+![Uploading BestShop-img.png…]()
 
 <h2>Feautures</h2>
+
 <li>Responsive design</li>
 <li>Scroll layout after use navigation</li>
 <li>Calculator showing how much you will pay for the selected package</li>
