@@ -1,10 +1,10 @@
 <h1>BestShop - Project</h1>
-BestShop is a landing page made during the Coders Lab course.<br/>
+BestShop is my first a landing page made during the Coders Lab course.<br/>
 Project based on visualization from <a href="https://xd.adobe.com/view/31804ad0-5f57-46e0-6edf-a5f54c37078a-47b1/grid/">AdobeXD</a>
 
 <img src="https://user-images.githubusercontent.com/94719206/171188335-429a80e8-7e4f-42cd-a265-6dc9ee2c60f4.png" width="360" height="200"/>
 
-<h2>Feautures</h2>
+<h2>Features</h2>
 
 <li>Responsive design</li>
 <li>Scroll layout after use navigation</li>
@@ -18,6 +18,7 @@ Project based on visualization from <a href="https://xd.adobe.com/view/31804ad0-
 <li>RWD</li>
 
 <h2>Hosting</h2>
+The projest is hosted on vercel platform, so you can see this project without downloading it.
 You can see this project <a href="https://bestshop-project-mateuszchmiest.netlify.app/">> HERE <</a>
 
 <h2>Run</h2>
